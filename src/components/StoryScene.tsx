@@ -1,0 +1,70 @@
+import { useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+
+interface StorySceneProps {
+  image: string;
+  sceneNumber: string;
+  headline: string;
+  insight: string;
+}
+
+const StoryScene = ({ image, sceneNumber, headline, insight }: StorySceneProps) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { amount: 0.4 });
+
+  return (
+    <section
+      ref={ref}
+      className="story-panel relative flex items-center justify-center overflow-hidden"
+    >
+      {/* Full-bleed background with subtle zoom */}
+      <motion.div
+        className="absolute inset-0"
+        animate={{ scale: isInView ? 1.05 : 1.15 }}
+        transition={{ duration: 1.8, ease: [0.25, 0.1, 0.25, 1] }}
+      >
+        <img
+          src={image}
+          alt={headline}
+          className="w-full h-full object-cover object-center"
+        />
+      </motion.div>
+
+      {/* Gradient overlays for readability */}
+      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/80" />
+
+      {/* Content in safe area */}
+      <div className="relative z-10 story-safe-area text-center">
+        <motion.span
+          className="inline-block font-display font-medium tracking-[0.3em] uppercase text-primary mb-6 text-glow story-label"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
+          {sceneNumber}
+        </motion.span>
+
+        <motion.h2
+          className="font-display font-bold text-foreground mb-6 leading-[1.05] story-headline"
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+          transition={{ duration: 0.9, delay: 0.35, ease: "easeOut" }}
+        >
+          {headline}
+        </motion.h2>
+
+        <motion.p
+          className="text-muted-foreground font-body leading-relaxed max-w-xl mx-auto story-body"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, delay: 0.55, ease: "easeOut" }}
+        >
+          {insight}
+        </motion.p>
+      </div>
+    </section>
+  );
+};
+
+export default StoryScene;
