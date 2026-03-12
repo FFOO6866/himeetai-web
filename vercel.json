@@ -1,0 +1,8 @@
+{
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/((?!assets|config\\.json|stories|robots\\.txt|favicon\\.ico|placeholder\\.svg).*)", "destination": "/index.html" }
+  ]
+}
