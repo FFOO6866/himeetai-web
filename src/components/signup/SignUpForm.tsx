@@ -58,15 +58,21 @@ const SignUpForm = ({ selectedTier, onSuccess }: SignUpFormProps) => {
 
   return (
     <motion.div
-      className="max-w-lg mx-auto"
+      className="w-full max-w-2xl mx-auto"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.2 }}
     >
-      <div className="p-8 rounded-lg bg-card border border-border">
-        <h3 className="font-display font-bold text-foreground text-xl mb-6 text-center">
+      <div className="text-center mb-10">
+        <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
           Your Details
-        </h3>
+        </span>
+        <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
+          Complete Your{" "}
+          <span className="gradient-text">Sign Up</span>
+        </h2>
+      </div>
+      <div className="p-6 sm:p-8 rounded-lg bg-card border border-border">
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
