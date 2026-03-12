@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "/about", label: "About" },
-    { to: "/services", label: "Services" },
+    { to: "/services", label: "Kairos" },
   ];
 
   return (
@@ -52,7 +52,7 @@ const Navbar = () => {
           to="/demo"
           className="px-5 py-2 text-sm font-display font-medium bg-primary text-primary-foreground rounded-md hover:brightness-110 transition-all"
         >
-          Try the Demo
+          Try Kairos Free
         </Link>
       </div>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
                 onClick={() => setOpen(false)}
                 className="px-5 py-3 text-sm font-display font-medium bg-primary text-primary-foreground rounded-md hover:brightness-110 transition-all text-center"
               >
-                Try the Demo
+                Try Kairos Free
               </Link>
             </nav>
           </SheetContent>

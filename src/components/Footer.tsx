@@ -13,8 +13,8 @@ const Footer = () => {
               Hi Meet <span className="text-primary">AI</span>
             </Link>
             <p className="text-sm text-muted-foreground font-body mt-3 max-w-xs leading-relaxed">
-              Human vision meets agentic force. Senior strategists × AI agents
-              driving your go-to-market.
+              Kairos: Your AI GTM platform. Specialized agents that analyze
+              markets, find leads, and build campaigns — guided by human strategists.
             </p>
           </div>
           <div className="flex gap-16">
@@ -33,7 +33,7 @@ const Footer = () => {
                   to="/services"
                   className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Services
+                  Kairos
                 </Link>
                 <Link
                   to="/demo"
@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <div className="h-px w-8 bg-border" />
             <span className="text-xs font-body text-muted-foreground tracking-[0.2em] uppercase">
-              Strategy · Foresight · Execution
+              Intelligence · Action · Control
             </span>
             <div className="h-px w-8 bg-border" />
           </div>

@@ -16,10 +16,10 @@ const CapabilityPillars = () => {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          Capabilities
+          Your AI Agents
         </span>
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
-          Full-Stack <span className="gradient-text">GTM</span>
+          The <span className="gradient-text">Full Bench</span>
         </h2>
       </motion.div>
 
@@ -28,7 +28,7 @@ const CapabilityPillars = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.7, delay: 0.3 }}
       >
-        <Tabs defaultValue="strategy" className="w-full">
+        <Tabs defaultValue="market-intelligence" className="w-full">
           <TabsList className="w-full flex flex-wrap bg-secondary/50 border border-border rounded-lg p-1 h-auto gap-1">
             {capabilities.map((cap) => (
               <TabsTrigger

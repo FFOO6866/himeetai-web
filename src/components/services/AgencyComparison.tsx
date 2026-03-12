@@ -2,12 +2,12 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const rows = [
-  { metric: "Time to launch", legacy: "3–6 months", himeet: "48 hours" },
-  { metric: "Monthly cost", legacy: "$15k–$50k+", himeet: "From $2,500" },
-  { metric: "Team size needed", legacy: "6–12 people", himeet: "Your strategist + AI agents" },
-  { metric: "Uptime", legacy: "Business hours", himeet: "24/7" },
-  { metric: "Reporting cadence", legacy: "Monthly", himeet: "Real-time" },
-  { metric: "Scale capacity", legacy: "Linear (hire more)", himeet: "Instant" },
+  { metric: "Time to first insights", legacy: "3–6 months", kairos: "Minutes" },
+  { metric: "Monthly investment", legacy: "$15k–$50k+", kairos: "From $700" },
+  { metric: "Team required", legacy: "6–12 people", kairos: "Just you + Kairos" },
+  { metric: "Deliverable visibility", legacy: "Monthly decks", kairos: "Real-time dashboard" },
+  { metric: "Scale capacity", legacy: "Hire more people", kairos: "Instant — same platform" },
+  { metric: "Uptime", legacy: "Business hours", kairos: "24/7" },
 ];
 
 const AgencyComparison = () => {
@@ -26,7 +26,7 @@ const AgencyComparison = () => {
           Comparison
         </span>
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
-          Legacy Agency vs <span className="gradient-text">The Full Bench</span>
+          Traditional Agency vs <span className="gradient-text">Kairos</span>
         </h2>
       </motion.div>
 
@@ -46,7 +46,7 @@ const AgencyComparison = () => {
                 Legacy Agency
               </th>
               <th className="py-3 pl-4 text-xs uppercase tracking-[0.2em] text-primary font-display font-medium">
-                Hi Meet AI
+                Kairos
               </th>
             </tr>
           </thead>
@@ -66,7 +66,7 @@ const AgencyComparison = () => {
                   {row.legacy}
                 </td>
                 <td className="py-4 pl-4 text-sm font-body text-primary font-medium">
-                  {row.himeet}
+                  {row.kairos}
                 </td>
               </motion.tr>
             ))}

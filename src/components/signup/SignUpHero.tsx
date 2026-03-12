@@ -31,8 +31,8 @@ const SignUpHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
         >
-          Activate Your{" "}
-          <span className="gradient-text">Full Bench</span>
+          Start with{" "}
+          <span className="gradient-text">Kairos</span>
         </motion.h1>
 
         <motion.p
@@ -41,8 +41,8 @@ const SignUpHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          Select your tier, tell us about your goals, and a strategist will
-          prepare your mission briefing within 24 hours.
+          Choose your plan and get started. Kairos Starter gives you instant
+          platform access. Pro and Enterprise include dedicated strategist support.
         </motion.p>
       </div>
     </section>

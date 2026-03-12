@@ -4,28 +4,28 @@ import { motion, useInView } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Onboard",
-    description: "Share your goals, brand, and data. We assemble your bench.",
+    title: "Sign Up",
+    description: "Create your Kairos account in minutes. No sales call required for Starter.",
   },
   {
     number: "02",
-    title: "Intel",
-    description: "AI agents map your market, competitors, and ideal customers.",
+    title: "Connect",
+    description: "Tell Kairos about your company, market, and goals. Paste your website URL and the agents get to work.",
   },
   {
     number: "03",
-    title: "Launch",
-    description: "Campaigns deploy across channels — outbound, content, paid.",
+    title: "Analyze",
+    description: "AI agents map your competitive landscape, identify your ideal customers, and score potential leads.",
   },
   {
     number: "04",
-    title: "Optimize",
-    description: "Continuous A/B testing and reallocation to maximize ROI.",
+    title: "Act",
+    description: "Review scored lead lists, competitor SWOTs, and campaign briefs — then launch outreach directly.",
   },
   {
     number: "05",
     title: "Scale",
-    description: "Expand to new markets and segments without adding headcount.",
+    description: "Expand into new segments and markets. Your agents adapt automatically as your targets evolve.",
   },
 ];
 

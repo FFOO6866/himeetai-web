@@ -3,24 +3,24 @@ import { motion, useInView } from "framer-motion";
 
 const comparisons = [
   {
-    legacy: "Hire a 6-person marketing team",
-    agentic: "Activate a full bench in 48 hours",
+    legacy: "Hire a 6-person marketing team ($30k+/mo)",
+    agentic: "Kairos: AI agents + strategist from $700/mo",
   },
   {
-    legacy: "Wait 3 months for campaign results",
-    agentic: "First insights in minutes",
+    legacy: "Wait 3 months for market research",
+    agentic: "Competitor SWOT and market map in minutes",
   },
   {
-    legacy: "Pay agency retainers with vague ROI",
-    agentic: "Transparent, output-driven pricing",
+    legacy: "Pay agency retainers with vague deliverables",
+    agentic: "See every output: lead lists, campaign briefs, SWOT analyses",
   },
   {
-    legacy: "One strategist juggling 12 accounts",
-    agentic: "Your strategist + dedicated AI agents, 24/7",
+    legacy: "One account manager juggling 12 clients",
+    agentic: "Dedicated agents focused solely on your market",
   },
   {
-    legacy: "Manual reporting, monthly decks",
-    agentic: "Real-time dashboards, continuous optimisation",
+    legacy: "Monthly PowerPoint reports",
+    agentic: "Live dashboard with real-time intelligence",
   },
 ];
 
@@ -37,10 +37,10 @@ const ManifestoStrip = () => {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          Legacy vs Agentic
+          Why Kairos Wins
         </span>
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
-          The Old Way is Broken
+          Legacy GTM is <span className="gradient-text">Broken</span>
         </h2>
       </motion.div>
 
@@ -55,7 +55,7 @@ const ManifestoStrip = () => {
           >
             <div className="px-5 py-4 rounded-lg bg-card border border-border opacity-60">
               <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground block mb-1">
-                Legacy
+                Traditional
               </span>
               <p className="text-sm font-body text-muted-foreground">
                 {item.legacy}
@@ -63,7 +63,7 @@ const ManifestoStrip = () => {
             </div>
             <div className="px-5 py-4 rounded-lg bg-card border border-border ring-1 ring-primary/20">
               <span className="text-xs uppercase tracking-[0.2em] text-primary block mb-1">
-                Hi Meet AI
+                Kairos
               </span>
               <p className="text-sm font-body text-foreground">{item.agentic}</p>
             </div>

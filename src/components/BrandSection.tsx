@@ -58,10 +58,10 @@ const BrandSection = () => {
           transition={{ duration: 0.7, delay: 0.65 }}
         >
           <Link to="/demo" className="px-8 py-4 bg-primary text-primary-foreground font-display font-semibold rounded-lg hover:brightness-110 transition-all duration-300 text-sm tracking-wide">
-            Get Your GTM Briefing
+            Try Kairos Free
           </Link>
-          <Link to="/about" className="px-8 py-4 border border-border text-foreground font-display font-medium rounded-lg hover:bg-secondary transition-all duration-300 text-sm tracking-wide">
-            View Case Studies
+          <Link to="/services" className="px-8 py-4 border border-border text-foreground font-display font-medium rounded-lg hover:bg-secondary transition-all duration-300 text-sm tracking-wide">
+            See How It Works
           </Link>
         </motion.div>
 
@@ -72,7 +72,7 @@ const BrandSection = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
         >
           <div className="h-px w-16 bg-border" />
-          <span className="text-xs font-body text-muted-foreground tracking-[0.2em] uppercase">Strategy · Foresight · Execution</span>
+          <span className="text-xs font-body text-muted-foreground tracking-[0.2em] uppercase">Intelligence · Action · Control</span>
           <div className="h-px w-16 bg-border" />
         </motion.div>
       </div>

@@ -3,22 +3,22 @@ import { motion, useInView } from "framer-motion";
 
 const pillars = [
   {
-    title: "Commander",
-    subtitle: "You",
+    title: "Intelligence",
+    subtitle: "Know Your Market",
     description:
-      "Set the vision, define the mission. Your strategic intent drives the bench. You stay in control — we amplify your direction.",
+      "Kairos uses Market Intelligence, Competitor Analyst, and Customer Profiler agents to build a living picture of your landscape — opportunities, threats, and ideal buyers, continuously updated.",
   },
   {
-    title: "Mission Control",
-    subtitle: "Our Strategists",
+    title: "Action",
+    subtitle: "Move with Precision",
     description:
-      "Human strategists who architect campaigns, calibrate agents, and ensure everything aligns with your business goals.",
+      "Lead Hunter and Campaign Architect agents turn intelligence into action — sourcing scored prospects, designing multi-channel campaigns, and generating outreach-ready briefs.",
   },
   {
-    title: "The Agents",
-    subtitle: "AI Workforce",
+    title: "Control",
+    subtitle: "Stay in Command",
     description:
-      "Autonomous agents that execute at scale — research, create, deploy, optimise. 24/7, no bottlenecks, no burnout. Directed by strategists, not left on autopilot.",
+      "The GTM Strategist agent synthesizes everything into a unified playbook. On Pro and Enterprise tiers, human strategists review, refine, and keep your go-to-market on target.",
   },
 ];
 
@@ -35,10 +35,10 @@ const PhilosophySection = () => {
         transition={{ duration: 0.8, delay: 0.1 }}
       >
         <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          Our Philosophy
+          The Kairos Framework
         </span>
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
-          Human Vision. <span className="gradient-text">Agentic Force.</span>
+          Intelligence. <span className="gradient-text">Action. Control.</span>
         </h2>
       </motion.div>
 

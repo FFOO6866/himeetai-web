@@ -31,8 +31,8 @@ const AboutHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
         >
-          We're Not Another Agency.{" "}
-          <span className="gradient-text">We're the Full Bench.</span>
+          Human Strategists ×{" "}
+          <span className="gradient-text">AI Agents</span>
         </motion.h1>
 
         <motion.p
@@ -41,9 +41,9 @@ const AboutHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          Most companies choose between expensive agencies or unproven AI tools.
-          We give you both — senior strategists and autonomous AI agents,
-          working as one team.
+          Most GTM tools give you data. Most agencies give you decks. Kairos
+          gives you both — specialized AI agents and senior strategists,
+          working together to drive your growth.
         </motion.p>
       </div>
     </section>

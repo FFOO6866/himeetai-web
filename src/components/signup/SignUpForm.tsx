@@ -65,7 +65,7 @@ const SignUpForm = ({ selectedTier, onSuccess }: SignUpFormProps) => {
     >
       <div className="p-8 rounded-lg bg-card border border-border">
         <h3 className="font-display font-bold text-foreground text-xl mb-6 text-center">
-          Tell Us About Your Mission
+          Your Details
         </h3>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -106,45 +106,49 @@ const SignUpForm = ({ selectedTier, onSuccess }: SignUpFormProps) => {
               className="bg-secondary/50 border-border"
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-display mb-1.5 block">
-                Phone
-              </label>
-              <Input
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                placeholder="+1 (555) 000-0000"
-                type="tel"
-                className="bg-secondary/50 border-border"
-              />
-            </div>
-            <div>
-              <label className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-display mb-1.5 block">
-                Website
-              </label>
-              <Input
-                value={website}
-                onChange={(e) => setWebsite(e.target.value)}
-                placeholder="https://acme.com"
-                type="url"
-                className="bg-secondary/50 border-border"
-              />
-            </div>
-          </div>
-          <div>
-            <label className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-display mb-1.5 block">
-              Goals & Objectives *
-            </label>
-            <textarea
-              value={goals}
-              onChange={(e) => setGoals(e.target.value)}
-              placeholder="Tell us about your growth goals, target markets, and what success looks like..."
-              required
-              rows={4}
-              className="w-full rounded-md border border-border bg-secondary/50 px-3 py-2 text-sm font-body text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background resize-none"
-            />
-          </div>
+          {selectedTier !== "starter" && (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-display mb-1.5 block">
+                    Phone
+                  </label>
+                  <Input
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="+1 (555) 000-0000"
+                    type="tel"
+                    className="bg-secondary/50 border-border"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-display mb-1.5 block">
+                    Website
+                  </label>
+                  <Input
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                    placeholder="https://acme.com"
+                    type="url"
+                    className="bg-secondary/50 border-border"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-display mb-1.5 block">
+                  Goals & Objectives *
+                </label>
+                <textarea
+                  value={goals}
+                  onChange={(e) => setGoals(e.target.value)}
+                  placeholder="Tell us about your growth goals, target markets, and what success looks like..."
+                  required
+                  rows={4}
+                  className="w-full rounded-md border border-border bg-secondary/50 px-3 py-2 text-sm font-body text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background resize-none"
+                />
+              </div>
+            </>
+          )}
 
           {error && (
             <p className="text-sm text-destructive font-body">{error}</p>
@@ -155,7 +159,7 @@ const SignUpForm = ({ selectedTier, onSuccess }: SignUpFormProps) => {
             disabled={loading || !selectedTier}
             className="mt-2 px-8 py-4 bg-primary text-primary-foreground font-display font-semibold rounded-lg hover:brightness-110 transition-all duration-300 text-sm tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "Submitting..." : "Activate My Bench"}
+            {loading ? "Submitting..." : selectedTier === "starter" ? "Create My Account" : "Request Onboarding"}
           </button>
         </form>
       </div>

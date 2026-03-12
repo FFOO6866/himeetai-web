@@ -14,7 +14,7 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.7, delay: 0.1 }}
       >
-        The Team
+        The Bench
       </motion.span>
 
       <motion.h2
@@ -23,8 +23,8 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.25 }}
       >
-        Senior Strategists ×{" "}
-        <span className="gradient-text">Agentic Force</span>
+        Meet the{" "}
+        <span className="gradient-text">Full Bench</span>
       </motion.h2>
 
       <motion.p
@@ -33,9 +33,10 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.45 }}
       >
-        Senior growth strategists paired with autonomous AI agents.
-        No bloated org chart. No junior account managers. Just experienced humans
-        and tireless machines — the full bench.
+        Every Kairos plan puts specialized AI agents to work on your
+        go-to-market — Market Intelligence, Competitor Analyst, Customer
+        Profiler, Lead Hunter, Campaign Architect, and GTM Strategist. On Pro
+        and Enterprise tiers, human strategists direct the bench.
       </motion.p>
 
       <motion.div
@@ -47,7 +48,7 @@ const TeamTeaser = () => {
           to="/services"
           className="inline-block px-8 py-4 bg-primary text-primary-foreground font-display font-semibold rounded-lg hover:brightness-110 transition-all duration-300 text-sm tracking-wide"
         >
-          See What We Do
+          Explore Kairos
         </Link>
       </motion.div>
     </section>

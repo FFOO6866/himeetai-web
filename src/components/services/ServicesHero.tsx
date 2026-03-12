@@ -22,7 +22,7 @@ const ServicesHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          What We Do
+          The Platform
         </motion.span>
 
         <motion.h1
@@ -31,8 +31,8 @@ const ServicesHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
         >
-          Your Augmented{" "}
-          <span className="gradient-text">Growth Engine</span>
+          Meet{" "}
+          <span className="gradient-text">Kairos</span>
         </motion.h1>
 
         <motion.p
@@ -41,9 +41,9 @@ const ServicesHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          From strategy to execution to optimisation — AI agents handle the
-          heavy lifting while human strategists ensure everything stays on
-          mission.
+          Your AI GTM platform. Specialized agents analyze your market,
+          find your leads, and build your campaigns — while human strategists
+          keep it all on target.
         </motion.p>
       </div>
     </section>

@@ -20,7 +20,7 @@ const TierCards = () => {
           Pricing
         </span>
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
-          Choose Your <span className="gradient-text">Tier</span>
+          Simple, Transparent <span className="gradient-text">Pricing</span>
         </h2>
       </motion.div>
 

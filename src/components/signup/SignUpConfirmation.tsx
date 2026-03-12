@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import type { Tier } from "@/data/services";
 
-const SignUpConfirmation = () => {
+interface SignUpConfirmationProps {
+  tier: Tier["id"] | null;
+}
+
+const SignUpConfirmation = ({ tier }: SignUpConfirmationProps) => {
+  const isStarter = tier === "starter";
+
   return (
     <motion.div
       className="max-w-md mx-auto text-center"
@@ -15,11 +22,12 @@ const SignUpConfirmation = () => {
         </div>
 
         <h3 className="font-display font-bold text-foreground text-xl mb-3">
-          Mission Briefing In Progress
+          {isStarter ? "Welcome to Kairos" : "You're All Set"}
         </h3>
         <p className="text-sm text-muted-foreground font-body leading-relaxed mb-8">
-          Your mission briefing is being prepared. A strategist will be in touch
-          within 24 hours to align on your goals and assemble your bench.
+          {isStarter
+            ? "Your account is being set up. You'll receive login credentials at your email within minutes."
+            : "A strategist will reach out within 24 hours to kick off your onboarding and configure your Kairos agents."}
         </p>
 
         <div className="flex flex-col gap-3">
@@ -27,7 +35,7 @@ const SignUpConfirmation = () => {
             to="/demo"
             className="px-6 py-3 bg-primary text-primary-foreground font-display font-medium rounded-lg hover:brightness-110 transition-all duration-300 text-sm tracking-wide"
           >
-            Try the Demo While You Wait
+            {isStarter ? "Try the Demo" : "Try the Demo While You Wait"}
           </Link>
           <Link
             to="/"

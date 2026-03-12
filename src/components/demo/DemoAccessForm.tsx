@@ -56,10 +56,10 @@ const DemoAccessForm = ({ onSuccess }: DemoAccessFormProps) => {
     >
       <div className="p-8 rounded-lg bg-card border border-border">
         <h3 className="font-display font-bold text-foreground text-xl mb-2 text-center">
-          Request Access
+          Get Your Kairos Briefing
         </h3>
         <p className="text-sm text-muted-foreground font-body text-center mb-6">
-          Enter your details and we'll send you an access code.
+          Enter your company details. Your personalized briefing will be ready in minutes.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">

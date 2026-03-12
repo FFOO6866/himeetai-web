@@ -18,7 +18,7 @@ const SignUpPage = () => {
       <SignUpHero />
       <section className="page-section-wide">
         {submitted ? (
-          <SignUpConfirmation />
+          <SignUpConfirmation tier={selectedTier} />
         ) : (
           <>
             <TierSelector selected={selectedTier} onSelect={setSelectedTier} />
