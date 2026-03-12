@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="border-t border-border bg-background" style={{ scrollSnapAlign: "end" }}>
       <div className="max-w-[900px] mx-auto px-6 md:px-12 lg:px-24 py-16">
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <div>

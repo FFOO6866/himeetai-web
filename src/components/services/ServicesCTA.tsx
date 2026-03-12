@@ -41,6 +41,7 @@ const ServicesCTA = () => {
         </Link>
         <Link
           to="/signup"
+          state={{ tier: "growth" }}
           className="px-8 py-4 border border-border text-foreground font-display font-medium rounded-lg hover:bg-secondary transition-all duration-300 text-sm tracking-wide"
         >
           Talk to a Strategist

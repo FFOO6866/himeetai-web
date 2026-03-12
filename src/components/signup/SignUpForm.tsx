@@ -106,7 +106,7 @@ const SignUpForm = ({ selectedTier, onSuccess }: SignUpFormProps) => {
               className="bg-secondary/50 border-border"
             />
           </div>
-          {selectedTier !== "starter" && (
+          {selectedTier && selectedTier !== "starter" && (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>

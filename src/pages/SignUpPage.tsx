@@ -16,19 +16,23 @@ const SignUpPage = () => {
   return (
     <PageLayout>
       <SignUpHero />
-      <section className="page-section-wide">
-        {submitted ? (
+      {submitted ? (
+        <section className="page-section">
           <SignUpConfirmation tier={selectedTier} />
-        ) : (
-          <>
+        </section>
+      ) : (
+        <>
+          <section className="page-section-wide">
             <TierSelector selected={selectedTier} onSelect={setSelectedTier} />
+          </section>
+          <section className="page-section">
             <SignUpForm
               selectedTier={selectedTier}
               onSuccess={() => setSubmitted(true)}
             />
-          </>
-        )}
-      </section>
+          </section>
+        </>
+      )}
     </PageLayout>
   );
 };

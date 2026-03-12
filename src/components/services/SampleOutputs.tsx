@@ -126,7 +126,7 @@ const SampleOutputs = () => {
           </div>
           <div className="mt-4 pt-3 border-t border-border/50">
             <span className="text-xs text-muted-foreground font-body italic">
-              Sample output · real companies, real scores
+              Sample output · your lead list will be personalized
             </span>
           </div>
         </motion.div>

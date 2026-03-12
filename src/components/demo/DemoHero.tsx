@@ -70,9 +70,9 @@ const DemoHero = () => {
           ))}
         </motion.div>
 
-        {/* Sample briefing preview */}
+        {/* Sample briefing preview — hidden on mobile to keep hero compact */}
         <motion.div
-          className="mt-12 max-w-2xl mx-auto text-left"
+          className="hidden md:block mt-12 max-w-2xl mx-auto text-left"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7, delay: 0.75 }}
