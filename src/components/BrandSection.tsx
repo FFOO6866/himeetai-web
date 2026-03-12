@@ -28,7 +28,7 @@ const BrandSection = () => {
           transition={{ duration: 0.7, delay: 0.1 }}
         >
           <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="text-sm font-body text-muted-foreground">AI Strategy Consultancy</span>
+          <span className="text-sm font-body text-muted-foreground">Human-Led, Agent-Driven</span>
         </motion.div>
 
         <motion.h1

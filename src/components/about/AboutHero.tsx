@@ -32,7 +32,7 @@ const AboutHero = () => {
           transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
         >
           We're Not Another Agency.{" "}
-          <span className="gradient-text">We're the Fleet.</span>
+          <span className="gradient-text">We're the Full Bench.</span>
         </motion.h1>
 
         <motion.p
@@ -41,9 +41,9 @@ const AboutHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          Most companies hire teams to execute playbooks. We deploy autonomous AI
-          agents that think, adapt, and deliver — at machine speed with human
-          strategic oversight.
+          Most companies choose between expensive agencies or unproven AI tools.
+          We give you both — senior strategists and autonomous AI agents,
+          working as one team.
         </motion.p>
       </div>
     </section>

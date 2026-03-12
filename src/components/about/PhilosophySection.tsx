@@ -6,7 +6,7 @@ const pillars = [
     title: "Commander",
     subtitle: "You",
     description:
-      "Set the vision, define the mission. Your strategic intent drives the fleet. You stay in control — the AI amplifies your direction.",
+      "Set the vision, define the mission. Your strategic intent drives the bench. You stay in control — we amplify your direction.",
   },
   {
     title: "Mission Control",
@@ -15,10 +15,10 @@ const pillars = [
       "Human strategists who architect campaigns, calibrate agents, and ensure everything aligns with your business goals.",
   },
   {
-    title: "The Fleet",
-    subtitle: "AI Agents",
+    title: "The Agents",
+    subtitle: "AI Workforce",
     description:
-      "Autonomous agents that execute at scale — research, create, deploy, optimise. 24/7, no bottlenecks, no burnout.",
+      "Autonomous agents that execute at scale — research, create, deploy, optimise. 24/7, no bottlenecks, no burnout. Directed by strategists, not left on autopilot.",
   },
 ];
 

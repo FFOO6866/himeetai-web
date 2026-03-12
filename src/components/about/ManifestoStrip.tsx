@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 const comparisons = [
   {
     legacy: "Hire a 6-person marketing team",
-    agentic: "Deploy a fleet in 48 hours",
+    agentic: "Activate a full bench in 48 hours",
   },
   {
     legacy: "Wait 3 months for campaign results",
@@ -16,7 +16,7 @@ const comparisons = [
   },
   {
     legacy: "One strategist juggling 12 accounts",
-    agentic: "Dedicated AI agents, 24/7 uptime",
+    agentic: "Your strategist + dedicated AI agents, 24/7",
   },
   {
     legacy: "Manual reporting, monthly decks",

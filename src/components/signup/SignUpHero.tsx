@@ -32,7 +32,7 @@ const SignUpHero = () => {
           transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
         >
           Activate Your{" "}
-          <span className="gradient-text">Autonomous Fleet</span>
+          <span className="gradient-text">Full Bench</span>
         </motion.h1>
 
         <motion.p

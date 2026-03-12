@@ -3,9 +3,9 @@ import { motion, useInView } from "framer-motion";
 
 const stats = [
   { value: "Minutes", suffix: " not months", label: "Time to first insights" },
-  { value: "24/7", suffix: " uptime", label: "Your fleet never sleeps" },
+  { value: "24/7", suffix: " uptime", label: "Your bench never sleeps" },
   { value: "1/10th", suffix: " the cost", label: "vs. traditional agencies" },
-  { value: "50+", suffix: " agents", label: "Ready to deploy" },
+  { value: "12×50+", suffix: "", label: "Strategists × AI agents" },
 ];
 
 const AnimatedCounter = ({

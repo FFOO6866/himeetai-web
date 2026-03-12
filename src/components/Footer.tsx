@@ -13,8 +13,8 @@ const Footer = () => {
               Hi Meet <span className="text-primary">AI</span>
             </Link>
             <p className="text-sm text-muted-foreground font-body mt-3 max-w-xs leading-relaxed">
-              AI-native growth SaaS. Autonomous agents that drive your
-              go-to-market.
+              Human vision meets agentic force. Senior strategists × AI agents
+              driving your go-to-market.
             </p>
           </div>
           <div className="flex gap-16">

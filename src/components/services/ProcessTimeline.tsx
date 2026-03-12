@@ -5,7 +5,7 @@ const steps = [
   {
     number: "01",
     title: "Onboard",
-    description: "Share your goals, brand, and data. We configure your fleet.",
+    description: "Share your goals, brand, and data. We assemble your bench.",
   },
   {
     number: "02",

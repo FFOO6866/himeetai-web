@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 const rows = [
   { metric: "Time to launch", legacy: "3–6 months", himeet: "48 hours" },
   { metric: "Monthly cost", legacy: "$15k–$50k+", himeet: "From $2,500" },
-  { metric: "Team size needed", legacy: "6–12 people", himeet: "0 hires" },
+  { metric: "Team size needed", legacy: "6–12 people", himeet: "Your strategist + AI agents" },
   { metric: "Uptime", legacy: "Business hours", himeet: "24/7" },
   { metric: "Reporting cadence", legacy: "Monthly", himeet: "Real-time" },
   { metric: "Scale capacity", legacy: "Linear (hire more)", himeet: "Instant" },
@@ -26,7 +26,7 @@ const AgencyComparison = () => {
           Comparison
         </span>
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
-          Agency vs <span className="gradient-text">Fleet</span>
+          Legacy Agency vs <span className="gradient-text">The Full Bench</span>
         </h2>
       </motion.div>
 

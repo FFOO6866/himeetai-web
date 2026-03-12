@@ -48,8 +48,8 @@ const DemoHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          Our AI agents will analyze your company and deliver a real intelligence
-          briefing — not a generic template. Here's what you'll get:
+          Our strategists and AI agents will analyze your company and deliver a real
+          intelligence briefing — not a generic template. Here's what you'll get:
         </motion.p>
 
         <motion.div

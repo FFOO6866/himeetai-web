@@ -23,8 +23,8 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.25 }}
       >
-        Lean Strategists +{" "}
-        <span className="gradient-text">Autonomous Workforce</span>
+        Senior Strategists ×{" "}
+        <span className="gradient-text">Agentic Force</span>
       </motion.h2>
 
       <motion.p
@@ -33,9 +33,9 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.45 }}
       >
-        A small, senior team of growth strategists directs a fleet of AI agents.
+        Senior growth strategists paired with autonomous AI agents.
         No bloated org chart. No junior account managers. Just experienced humans
-        and tireless machines, working in concert.
+        and tireless machines — the full bench.
       </motion.p>
 
       <motion.div

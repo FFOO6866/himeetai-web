@@ -69,7 +69,7 @@ export const capabilities: CapabilityPillar[] = [
     id: "scale",
     title: "Scale",
     description:
-      "Expand into new markets, segments, and channels without expanding headcount. Your fleet grows with you.",
+      "Expand into new markets, segments, and channels without expanding headcount. Your bench scales with you.",
     features: [
       "Multi-market expansion",
       "New segment targeting",
@@ -120,7 +120,7 @@ export const tiers: Tier[] = [
     audience: "Enterprise",
     price: "Custom",
     description:
-      "White-glove agentic operations embedded into your org. Human strategists + autonomous fleet.",
+      "White-glove agentic operations embedded into your org. Senior strategists × AI agents — the full bench.",
     features: [
       "Everything in Growth, plus:",
       "Embedded strategist team",

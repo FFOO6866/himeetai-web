@@ -14,7 +14,7 @@ const ServicesCTA = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.1 }}
       >
-        Ready to Deploy?
+        Ready to Start?
       </motion.h2>
 
       <motion.p
@@ -23,7 +23,7 @@ const ServicesCTA = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.25 }}
       >
-        See what your autonomous fleet can uncover about your market — or talk
+        See what your full bench can uncover about your market — or talk
         to a strategist about your specific goals.
       </motion.p>
 

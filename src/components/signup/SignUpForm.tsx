@@ -155,7 +155,7 @@ const SignUpForm = ({ selectedTier, onSuccess }: SignUpFormProps) => {
             disabled={loading || !selectedTier}
             className="mt-2 px-8 py-4 bg-primary text-primary-foreground font-display font-semibold rounded-lg hover:brightness-110 transition-all duration-300 text-sm tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "Submitting..." : "Activate My Fleet"}
+            {loading ? "Submitting..." : "Activate My Bench"}
           </button>
         </form>
       </div>

@@ -19,7 +19,7 @@ const SignUpConfirmation = () => {
         </h3>
         <p className="text-sm text-muted-foreground font-body leading-relaxed mb-8">
           Your mission briefing is being prepared. A strategist will be in touch
-          within 24 hours to align on your goals and deploy your fleet.
+          within 24 hours to align on your goals and assemble your bench.
         </p>
 
         <div className="flex flex-col gap-3">
