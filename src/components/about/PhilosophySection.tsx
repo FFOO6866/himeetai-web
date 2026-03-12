@@ -6,19 +6,19 @@ const pillars = [
     title: "Intelligence",
     subtitle: "Know Your Market",
     description:
-      "Kairos uses Market Intelligence, Competitor Analyst, and Customer Profiler agents to build a living picture of your landscape — opportunities, threats, and ideal buyers, continuously updated.",
+      "Kairos agents build a living picture of your landscape — scanning competitors, sizing markets, and profiling ideal buyers. Continuously updated, not a one-time report.",
   },
   {
     title: "Action",
     subtitle: "Move with Precision",
     description:
-      "Lead Hunter and Campaign Architect agents turn intelligence into action — sourcing scored prospects, designing multi-channel campaigns, and generating outreach-ready briefs.",
+      "Specialized agents turn intelligence into action — sourcing scored prospects, designing multi-channel campaigns, and generating outreach-ready briefs.",
   },
   {
     title: "Control",
     subtitle: "Stay in Command",
     description:
-      "The GTM Strategist agent synthesizes everything into a unified playbook. On Pro and Enterprise tiers, human strategists review, refine, and keep your go-to-market on target.",
+      "Your agents synthesize everything into a unified playbook. On Pro and Enterprise tiers, human strategists review, refine, and keep your go-to-market on target.",
   },
 ];
 

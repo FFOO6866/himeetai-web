@@ -42,7 +42,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8, delay: 0.45 }}
         >
           Most GTM tools give you data. Most agencies give you decks. Kairos
-          gives you both — specialized AI agents and senior strategists,
+          gives you both — a growing team of AI agents and senior strategists,
           working together to drive your growth.
         </motion.p>
       </div>

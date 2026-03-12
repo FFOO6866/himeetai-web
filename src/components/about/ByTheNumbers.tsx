@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const stats = [
-  { value: "6", suffix: " AI agents", label: "Working on your GTM" },
+  { value: "Always", suffix: " growing", label: "AI agents on your GTM" },
   { value: "Minutes", suffix: " not months", label: "Time to first insights" },
   { value: "24/7", suffix: " uptime", label: "Your agents never sleep" },
   { value: "$700", suffix: "/mo", label: "Full platform access" },

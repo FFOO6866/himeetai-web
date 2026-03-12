@@ -23,7 +23,7 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.25 }}
       >
-        Meet the{" "}
+        A Growing{" "}
         <span className="gradient-text">Full Bench</span>
       </motion.h2>
 
@@ -33,10 +33,11 @@ const TeamTeaser = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.45 }}
       >
-        Every Kairos plan puts specialized AI agents to work on your
-        go-to-market — Market Intelligence, Competitor Analyst, Customer
-        Profiler, Lead Hunter, Campaign Architect, and GTM Strategist. On Pro
-        and Enterprise tiers, human strategists direct the bench.
+        Every Kairos plan puts a team of specialized AI agents to work
+        on your go-to-market — from market intelligence and competitor
+        analysis to lead scoring and campaign design. As we expand into new
+        verticals, so does your bench. On Pro and Enterprise tiers, human
+        strategists direct the team.
       </motion.p>
 
       <motion.div

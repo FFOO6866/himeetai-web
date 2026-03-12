@@ -41,9 +41,9 @@ const ServicesHero = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          Your AI GTM platform. Specialized agents analyze your market,
-          find your leads, and build your campaigns — while human strategists
-          keep it all on target.
+          Your AI GTM platform. A growing team of specialized agents
+          analyzes your market, finds your leads, and builds your campaigns —
+          while human strategists keep it all on target.
         </motion.p>
       </div>
     </section>

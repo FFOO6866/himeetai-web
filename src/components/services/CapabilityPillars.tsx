@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { capabilities } from "@/data/services";
 
 const CapabilityPillars = () => {
@@ -8,7 +7,7 @@ const CapabilityPillars = () => {
   const isInView = useInView(ref, { amount: 0.4 });
 
   return (
-    <section ref={ref} className="page-section">
+    <section ref={ref} className="page-section-wide">
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: 30 }}
@@ -21,51 +20,41 @@ const CapabilityPillars = () => {
         <h2 className="font-display font-bold text-foreground tracking-tight leading-none story-headline mt-4">
           The <span className="gradient-text">Full Bench</span>
         </h2>
+        <p className="text-muted-foreground font-body leading-relaxed mt-4 max-w-xl mx-auto story-body">
+          Specialized agents that work together on your go-to-market —
+          with more agents added as we expand into new verticals.
+        </p>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-      >
-        <Tabs defaultValue="market-intelligence" className="w-full">
-          <TabsList className="w-full flex flex-wrap bg-secondary/50 border border-border rounded-lg p-1 h-auto gap-1">
-            {capabilities.map((cap) => (
-              <TabsTrigger
-                key={cap.id}
-                value={cap.id}
-                className="flex-1 min-w-[100px] font-display text-xs sm:text-sm data-[state=active]:bg-card data-[state=active]:text-primary"
-              >
-                {cap.title}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {capabilities.map((cap) => (
-            <TabsContent key={cap.id} value={cap.id} className="mt-8">
-              <div className="p-6 md:p-8 rounded-lg bg-card border border-border">
-                <h3 className="font-display font-bold text-foreground text-xl mb-3">
-                  {cap.title}
-                </h3>
-                <p className="text-muted-foreground font-body leading-relaxed mb-6 story-body">
-                  {cap.description}
-                </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {cap.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-start gap-2 text-sm font-body text-foreground"
-                    >
-                      <span className="text-primary mt-1 shrink-0">▸</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
-      </motion.div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        {capabilities.map((cap, i) => (
+          <motion.div
+            key={cap.id}
+            className="p-5 rounded-lg bg-card border border-border"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.2 + i * 0.08 }}
+          >
+            <h3 className="font-display font-bold text-foreground text-sm mb-2">
+              {cap.title}
+            </h3>
+            <p className="text-xs text-muted-foreground font-body leading-relaxed mb-3">
+              {cap.description}
+            </p>
+            <ul className="flex flex-col gap-1.5">
+              {cap.features.map((feature) => (
+                <li
+                  key={feature}
+                  className="flex items-start gap-1.5 text-xs font-body text-foreground/80"
+                >
+                  <span className="text-primary mt-0.5 shrink-0">▸</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        ))}
+      </div>
     </section>
   );
 };
